@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toss — Swipe & Clean · Support</title>
+<style>
+  :root {
+    --bg: #090D16;
+    --surface: #1E293B;
+    --text: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --brand: #5C9EFF;
+    --keep: #6CE6A6;
+    --delete: #FF5A5F;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+  header {
+    margin-bottom: 48px;
+    text-align: center;
+  }
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 16px;
+    background: var(--surface);
+    margin-bottom: 18px;
+    font-size: 36px;
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+  .tagline {
+    color: var(--text-secondary);
+    font-size: 17px;
+  }
+  section {
+    background: var(--surface);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 18px;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    color: var(--text);
+  }
+  h3:first-of-type { margin-top: 0; }
+  p { color: var(--text-secondary); margin-bottom: 10px; }
+  a { color: var(--brand); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .email {
+    display: inline-block;
+    background: rgba(92, 158, 255, 0.12);
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-family: "SF Mono", Menlo, monospace;
+    font-size: 15px;
+  }
+  footer {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 13px;
+    margin-top: 40px;
+  }
+  footer a { margin: 0 8px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">📸</div>
+      <h1>Toss — Swipe &amp; Clean</h1>
+      <p class="tagline">Clean out your photo library with a swipe.</p>
+    </header>
+
+    <section>
+      <h2>About the app</h2>
+      <p>Toss is a free iPhone &amp; iPad app that helps you clean out your photo library, Tinder-style: swipe right to keep, swipe left to send to trash. The app also includes bulk cleanup flows for screenshots, bursts, and full months at a time.</p>
+      <p>Toss is 100% free, ad-free, and runs entirely on your device. Your photos never leave your iPhone or iPad through this app.</p>
+    </section>
+
+    <section>
+      <h2>Support</h2>
+      <p>Found a bug? Have a feature idea? Want to say hi? Drop us an email:</p>
+      <p><a class="email" href="mailto:fveliz@maxillc.com">fveliz@maxillc.com</a></p>
+      <p>We typically reply within 1–2 business days. Please include your iOS version and a short description of what you saw — it speeds things up.</p>
+    </section>
+
+    <section>
+      <h2>Frequently asked</h2>
+
+      <h3>Where are my photos sent?</h3>
+      <p>Nowhere. Toss reads photos directly from your device via Apple's PhotoKit framework. Nothing ever leaves your iPhone or iPad through this app — no upload, no analytics, no third-party sharing.</p>
+
+      <h3>Does Toss actually delete my photos?</h3>
+      <p>Toss moves selected photos to the standard iOS "Recently Deleted" album, which is the system-level deletion that iOS handles. You can recover them from there for 30 days. Toss never deletes silently or without your explicit confirmation.</p>
+
+      <h3>I sent some photos to "trash" inside Toss but they didn't disappear from Photos.</h3>
+      <p>Photos only leave your library after you go to the Trash tab in Toss and confirm the batch deletion. Until then, they are still in your library. This is intentional so you can change your mind.</p>
+
+      <h3>I left a tip but nothing unlocked.</h3>
+      <p>The tip jar is a "thank-you" mechanism, not a paywall. There are no features locked behind it — every part of Toss is free for everyone. Tips just help support development.</p>
+
+      <h3>Will my keep / trash decisions sync to my new iPhone?</h3>
+      <p>If you have iCloud Photos enabled, yes — Toss uses Apple's iCloud-stable photo identifiers to remember your decisions across devices. If iCloud Photos is off, decisions live only on the current device.</p>
+
+      <h3>Why does Toss ask for full access to my photo library?</h3>
+      <p>Because Toss needs to see all of your photos to help you decide which ones to keep or delete. iOS only offers "Full Access" or "Limited Access" — limited access only shows a small subset you pre-pick, which defeats the purpose of a photo cleanup tool. We never copy or upload your photos.</p>
+    </section>
+
+    <section>
+      <h2>Privacy</h2>
+      <p>Toss does not collect any personal data. Read the full <a href="privacy.html">Privacy Policy</a> for details.</p>
+    </section>
+
+    <footer>
+      © 2026 Felipe Eduardo Veliz Rosas
+      <br>
+      <a href="privacy.html">Privacy Policy</a>
+      ·
+      <a href="mailto:fveliz@maxillc.com">Contact</a>
+    </footer>
+  </div>
+</body>
+</html>
